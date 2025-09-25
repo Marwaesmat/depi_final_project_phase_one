@@ -1,5 +1,6 @@
 # depi_final_project_phase_one
 Airlines Data Warehouse Project (Phase One)
+
 📌 Overview
 
 This project demonstrates the design and implementation of a Data Warehouse for an Airlines company, built using Python, SQL Server, Talend, and Apache Airflow (Docker).
