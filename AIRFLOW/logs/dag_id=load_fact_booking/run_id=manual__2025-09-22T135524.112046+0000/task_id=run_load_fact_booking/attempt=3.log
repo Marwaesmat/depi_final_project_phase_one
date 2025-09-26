@@ -1,0 +1,16 @@
+[2025-09-22T16:06:43.352+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: load_fact_booking.run_load_fact_booking manual__2025-09-22T13:55:24.112046+00:00 [queued]>
+[2025-09-22T16:06:43.362+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: load_fact_booking.run_load_fact_booking manual__2025-09-22T13:55:24.112046+00:00 [queued]>
+[2025-09-22T16:06:43.363+0000] {taskinstance.py:1361} INFO - Starting attempt 3 of 4
+[2025-09-22T16:06:43.379+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): run_load_fact_booking> on 2025-09-22 13:55:24.112046+00:00
+[2025-09-22T16:06:43.396+0000] {standard_task_runner.py:57} INFO - Started process 1279 to run task
+[2025-09-22T16:06:43.401+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'load_fact_booking', 'run_load_fact_booking', 'manual__2025-09-22T13:55:24.112046+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/load_fact_booking_dag.py', '--cfg-path', '/tmp/tmp88w_jng2']
+[2025-09-22T16:06:43.406+0000] {standard_task_runner.py:85} INFO - Job 11: Subtask run_load_fact_booking
+[2025-09-22T16:06:43.475+0000] {task_command.py:416} INFO - Running <TaskInstance: load_fact_booking.run_load_fact_booking manual__2025-09-22T13:55:24.112046+00:00 [running]> on host 1c4de4c639f5
+[2025-09-22T16:06:43.568+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='load_fact_booking' AIRFLOW_CTX_TASK_ID='run_load_fact_booking' AIRFLOW_CTX_EXECUTION_DATE='2025-09-22T13:55:24.112046+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-22T13:55:24.112046+00:00'
+[2025-09-22T16:06:43.569+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-09-22T16:06:43.572+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'bash -c "/opt/***/jobs/Load_Fact_Booking/Load_Fact_Booking_run.sh"']
+[2025-09-22T16:06:43.590+0000] {subprocess.py:86} INFO - Output:
+[2025-09-22T16:06:54.690+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-09-22T16:06:54.701+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=load_fact_booking, task_id=run_load_fact_booking, execution_date=20250922T135524, start_date=20250922T160643, end_date=20250922T160654
+[2025-09-22T16:06:54.759+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-09-22T16:06:54.772+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
